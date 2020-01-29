@@ -4,10 +4,10 @@ import numpy as np
 
 
 matplotlib.rcParams['text.usetex'] = True
-font_size = 20
+font_size = 30
 tnr_font = {'fontname': 'Times New Roman'}
 font = {'family': 'Times New Roman',
-        'size': 20}
+        'size': 30}
 matplotlib.rc('font', **font)
 
 # 100 linearly spaced numbers
