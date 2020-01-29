@@ -14,11 +14,15 @@ delta = 1.4
 delta_sup = 2.5
 font_size = 15
 # the function, which is y = x^2 here
-y_1 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0 * tau * np.exp(4 * (theta - delta)))
-y_2 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.25 * tau * np.exp(4 * (theta - delta)))
-y_3 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.5 * tau * np.exp(4 * (theta - delta)))
-y_4 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.75 * tau * np.exp(4 * (theta - delta)))
-y_5 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (1 * tau * np.exp(4 * (theta - delta)))
+# y_1 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0 * tau * np.exp(4 * (theta - delta)))
+# y_2 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.25 * tau * np.exp(4 * (theta - delta)))
+# y_3 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.5 * tau * np.exp(4 * (theta - delta)))
+# y_4 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.75 * tau * np.exp(4 * (theta - delta)))
+# y_5 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (1 * tau * np.exp(4 * (theta - delta)))
+
+theta_1 = 2.5
+y = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta_1)))) + (0.5 * tau * np.exp(4 * (theta_1 - delta)))
+print(y)
 
 
 
@@ -49,6 +53,6 @@ plt.xlabel(r'\emph{Load factor }$\theta_{i}^{l}$', fontsize=font_size)
 plt.ylabel(r'\emph{crowding penalty }$cp_{i}^{l}$', fontsize=font_size)
 
 # show the plot
-plt.grid()
-plt.show()
+# plt.grid()
+# plt.show()
 
