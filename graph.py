@@ -19,15 +19,15 @@ delta = 1.4
 delta_sup = 2.5
 
 # the function, which is y = x^2 here
-y_1 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0 * tau * np.exp(4 * (theta - delta)))
-y_2 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.25 * tau * np.exp(4 * (theta - delta)))
-y_3 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.5 * tau * np.exp(4 * (theta - delta)))
-y_4 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.75 * tau * np.exp(4 * (theta - delta)))
-y_5 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (1 * tau * np.exp(4 * (theta - delta)))
+y_1 = ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0 * tau * np.exp(4 * (theta - delta)))
+y_2 = ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.25 * tau * np.exp(4 * (theta - delta)))
+y_3 = ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.5 * tau * np.exp(4 * (theta - delta)))
+y_4 = ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.75 * tau * np.exp(4 * (theta - delta)))
+y_5 = ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (1 * tau * np.exp(4 * (theta - delta)))
 
-theta_1 = 1.95
-y = ((ro * tau)/(1 + np.exp(1000 * (1 - theta_1)))) + (0.5 * tau * np.exp(4 * (theta_1 - delta)))
-print(y)
+# theta_1 = 1.95
+# y = ((ro * tau)/(1 + np.exp(1000 * (1 - theta_1)))) + (0.5 * tau * np.exp(4 * (theta_1 - delta)))
+# print(y)
 
 
 
@@ -47,15 +47,16 @@ plt.text(delta, 88, r'$\underline{\delta}$', fontsize=font_size)
 plt.axvline(x=delta_sup, ls='dashed', color='black')
 plt.text(delta_sup, 88, r'$\bar{\delta}$', fontsize=font_size)
 
-plt.plot(theta, y_1, 'm', label='beta = 0')
-plt.plot(theta, y_2, 'r', label='beta = .25')
-plt.plot(theta, y_3, 'c', label='beta = .5')
-plt.plot(theta, y_4, 'g', label='beta = .75')
-plt.plot(theta, y_5, 'b', label='beta = 1')
+plt.plot(theta, y_1, 'm', label=r'$\beta$ = 0')
+plt.plot(theta, y_2, 'r', label=r'$\beta$ = .25')
+plt.plot(theta, y_3, 'c', label=r'$\beta$ = .5')
+plt.plot(theta, y_4, 'g', label=r'$\beta$ = .75')
+plt.plot(theta, y_5, 'b', label=r'$\beta$ = 1')
 plt.legend(loc='upper left')
 
 plt.xlabel(r'\emph{Load factor }$\theta_{i}^{l}$', fontsize=font_size, **tnr_font)
 plt.ylabel(r'\emph{crowding penalty }$cp_{i}^{l}$', fontsize=font_size, **tnr_font)
+
 
 # show the plot
 plt.grid()
