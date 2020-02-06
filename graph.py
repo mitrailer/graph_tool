@@ -25,9 +25,9 @@ y_3 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.5 * tau * np.exp(
 y_4 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (0.75 * tau * np.exp(4 * (theta - delta)))
 y_5 = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta)))) + (1 * tau * np.exp(4 * (theta - delta)))
 
-# theta_1 = 2.5
-# y = tau + ((ro * tau)/(1 + np.exp(1000 * (1 - theta_1)))) + (0.5 * tau * np.exp(4 * (theta_1 - delta)))
-# print(y)
+theta_1 = 1.95
+y = ((ro * tau)/(1 + np.exp(1000 * (1 - theta_1)))) + (0.5 * tau * np.exp(4 * (theta_1 - delta)))
+print(y)
 
 
 
