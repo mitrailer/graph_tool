@@ -54,8 +54,8 @@ plt.plot(theta, y_4, 'g', label=r'$\beta$ = .75')
 plt.plot(theta, y_5, 'b', label=r'$\beta$ = 1')
 plt.legend(loc='upper left')
 
-plt.xlabel(r'\emph{Load factor }$\theta_{i}^{l}$', fontsize=font_size, **tnr_font)
-plt.ylabel(r'\emph{crowding penalty }$cp_{i}^{l}$', fontsize=font_size, **tnr_font)
+plt.xlabel(r'\emph{Load factor }$\theta_{ijk}^{l}$', fontsize=font_size, **tnr_font)
+plt.ylabel(r'\emph{Crowding penalty }$cp_{ijk}^{l}$', fontsize=font_size, **tnr_font)
 
 
 # show the plot
